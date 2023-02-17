@@ -37,5 +37,9 @@ packer.startup(
     use("git@github.com:rafamadriz/friendly-snippets")
     -- indent-blankline
     use("git@github.com:lukas-reineke/indent-blankline.nvim")
+    -- nvim-autopairs
+    use("git@github.com:windwp/nvim-autopairs")
+    -- Comment
+    use("git@github.com:numToStr/Comment.nvim")
   end
 )

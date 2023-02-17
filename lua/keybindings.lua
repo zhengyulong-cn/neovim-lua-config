@@ -156,5 +156,23 @@ pluginKeys.cmp = function(cmp)
   }
 end
 
+
+-- comment 注释
+pluginKeys.comment = {
+  -- Normal模式
+  toggler = {
+    line = "gcc",
+    block = "gbc",
+  },
+  -- Visual模式
+  opleader = {
+    line = "gc",
+    block = "gb",
+  }
+}
+-- ctrl + /
+map("n", "<C-_>", "gcc", { noremap = false })
+map("v", "<C-_>", "gcc", { noremap = false })
+
 return pluginKeys
 
