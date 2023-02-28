@@ -39,7 +39,11 @@ packer.startup(
     use("git@github.com:lukas-reineke/indent-blankline.nvim")
     -- nvim-autopairs
     use("git@github.com:windwp/nvim-autopairs")
+    -- nvim-ts-autotag
+    use("git@github.com:windwp/nvim-ts-autotag")
     -- Comment
     use("git@github.com:numToStr/Comment.nvim")
+    -- gitsigns
+    use("git@github.com:lewis6991/gitsigns.nvim")
   end
 )

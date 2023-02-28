@@ -114,6 +114,11 @@ _G.packer_plugins = {
     path = "/home/zhengyu/.local/share/nvim/site/pack/packer/start/friendly-snippets",
     url = "git@github.com:rafamadriz/friendly-snippets"
   },
+  ["gitsigns.nvim"] = {
+    loaded = true,
+    path = "/home/zhengyu/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
+    url = "git@github.com:lewis6991/gitsigns.nvim"
+  },
   ["indent-blankline.nvim"] = {
     loaded = true,
     path = "/home/zhengyu/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
@@ -163,6 +168,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/zhengyu/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
     url = "git@github.com:nvim-treesitter/nvim-treesitter"
+  },
+  ["nvim-ts-autotag"] = {
+    loaded = true,
+    path = "/home/zhengyu/.local/share/nvim/site/pack/packer/start/nvim-ts-autotag",
+    url = "git@github.com:windwp/nvim-ts-autotag"
   },
   ["nvim-web-devicons"] = {
     loaded = true,
