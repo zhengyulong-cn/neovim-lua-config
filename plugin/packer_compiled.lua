@@ -194,6 +194,11 @@ _G.packer_plugins = {
     path = "/home/zhengyu/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "git@github.com:nvim-telescope/telescope.nvim"
   },
+  ["toggleterm.nvim"] = {
+    loaded = true,
+    path = "/home/zhengyu/.local/share/nvim/site/pack/packer/start/toggleterm.nvim",
+    url = "git@github.com:akinsho/toggleterm.nvim"
+  },
   ["tokyonight.nvim"] = {
     loaded = true,
     path = "/home/zhengyu/.local/share/nvim/site/pack/packer/start/tokyonight.nvim",

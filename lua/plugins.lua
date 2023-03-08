@@ -70,5 +70,7 @@ packer.startup(
     use("git@github.com:numToStr/Comment.nvim")
     -- gitsigns
     use("git@github.com:lewis6991/gitsigns.nvim")
+    -- toggleterm终端
+    use("git@github.com:akinsho/toggleterm.nvim")
   end
 )
