@@ -1,4 +1,29 @@
-local packer = require("packer")
+local install_path = vim.fn.stdpath("data") .. "/site/pack/packer/start/packer.nvim"
+if vim.fn.empty(vim.fn.glob(install_path)) > 0 then
+  vim.notify("正在安装Pakcer.nvim，请稍后...")
+  vim.fn.system({
+    "git",
+    "clone",
+    "--depth",
+    "1",
+    "git@github.com:wbthomason/packer.nvim.git",
+    install_path,
+  })
+
+  -- https://github.com/wbthomason/packer.nvim/issues/750
+  local rtp_addition = vim.fn.stdpath("data") .. "/site/pack/*/start/*"
+  if not string.find(vim.o.runtimepath, rtp_addition) then
+    vim.o.runtimepath = rtp_addition .. "," .. vim.o.runtimepath
+  end
+  vim.notify("Pakcer.nvim 安装完毕")
+end
+
+local status_ok, packer = pcall(require, "packer")
+if not status_ok then
+  vim.notify("没有安装 packer.nvim")
+  return
+end
+
 packer.startup(
   function(use)
     -- Packer可以管理自身
